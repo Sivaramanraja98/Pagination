@@ -66,8 +66,8 @@ xhr.onload = function () {
   }
 
   document.getElementById("next-button").addEventListener("click", next);
-  // document.getElementById("first-button").addEventListener("click", first);
-  // document.getElementById("last-button").addEventListener("click", last);
+  document.getElementById("first-button").addEventListener("click", first);
+  document.getElementById("last-button").addEventListener("click", last);
   document.getElementById("prev-button").addEventListener("click", prev);
   document.getElementById("prev-button").setAttribute("disabled", true);
 
