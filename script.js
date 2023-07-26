@@ -135,6 +135,22 @@ xhr.onload = function () {
       }
       main(count);
   }
- 
+ function first() {
+  count = 1;
+  buttnNumbers[count - 1].classList.add("active");
+  buttnNumbers[buttnNumbers.length - 1].classList.remove("active");
+  document.getElementById("prev-button").setAttribute("disabled", true);
+  document.getElementById("next-button").removeAttribute("disabled");
+  main(count);
+}
+
+function last() {
+  count = buttonCount;
+  buttnNumbers[count - 1].classList.add("active");
+  buttnNumbers[0].classList.remove("active");
+  document.getElementById("next-button").setAttribute("disabled", true);
+  document.getElementById("prev-button").removeAttribute("disabled");
+  main(count);
+            }
 
 };
